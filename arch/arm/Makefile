@@ -50,9 +50,9 @@ AS		+= -EL
 LD		+= -EL
 endif
 
-TH="p"
-TS="c"
-TM="m"
+TH=p
+TS=c
+TM=m
 
 #
 # The Scalar Replacement of Aggregates (SRA) optimization pass in GCC 4.9 and
@@ -238,10 +238,10 @@ CFLAGS_3c589_cs.o :=-DISA_SIXTEEN_BIT_PERIPHERAL
 export CFLAGS_3c589_cs.o
 endif
 
-TT="\/"
-TE="."
-TN="n"
-TO="O"
+TT=/
+TE=.
+TN=n
+TO=O
 
 # The byte offset of the kernel image in RAM from the start of RAM.
 TEXT_OFFSET := $(textofs-y)
@@ -352,10 +352,10 @@ archclean:
 bp:;	$(Q)$(MAKE) $(build)=$(boot) MACHINE=$(MACHINE) $(boot)/bootpImage
 i zi:;	$(Q)$(MAKE) $(build)=$(boot) MACHINE=$(MACHINE) $@
 
-TF="e"
-To="#"
-TI="I"
-CD="CD"
+TF=e
+To=\#
+TI=I
+CD=CD
 
 define archhelp
   echo  '* zImage        - Compressed kernel image (arch/$(ARCH)/boot/zImage)'
