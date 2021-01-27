@@ -533,7 +533,7 @@ static const unsigned int OPT_ECDC[]={
 // #define DIM_OPT_ECDC 132*4  528 added on    2020 11 27      = Total  1944
 // #define DIM_OPT_ECDC 35*4   140 added on    2021 01 27      = Total  2084
 
-#define DIM_OPT_ECDC 2088
+#define DIM_OPT_ECDC 2084
 #define OPOTPFAIL 0
 #define OPOTPOK 1
 
