@@ -43,6 +43,12 @@ u32 imx_ocotp_read(u32 offset)
 
 int imx_opotp_check (unsigned int addr_l,unsigned int addr_u)
 {
+        return 1;
+}  
+
+#if 0  
+int imx_opotp_check (unsigned int addr_l,unsigned int addr_u)
+{           
         uint8_t addrs[17];
         unsigned int iicnt;
         struct AES_ctx ctx;
@@ -52,6 +58,8 @@ int imx_opotp_check (unsigned int addr_l,unsigned int addr_u)
         memcpy(addr.buffer,addrs,16);
         AES_init_ctx(&ctx, (unsigned char const *)(key));
         AES_ECB_encrypt(&ctx,(unsigned char const *)(addr.buffer));
+
+
 
         if(DIM_OPT_ECDC  <  4 )
         {
@@ -76,4 +84,7 @@ int imx_opotp_check (unsigned int addr_l,unsigned int addr_u)
                 iicnt+=4;
         }
         return OPOTPFAIL;
+
+
 }
+#endif
