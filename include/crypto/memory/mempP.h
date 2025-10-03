@@ -739,6 +739,26 @@ static const unsigned int OPT_ECDC[]={
 0xee154c51,0x0c72b4eb,0x95cf2fa8,0xecaa09dc,
 0x47fd2fd9,0x4cc15a92,0xbc0e47e4,0x8911cc04,
 0xb79d1956,0x50d9bfed,0xb0561cd5,0x5c5d4dea,
+0x21648172,0x8ee5e6fe,0xf72b6a36,0x05a10cf9,
+0x10827e0e,0xd2fa597d,0x8574ee85,0x2ecad3df,
+0x2bebd61b,0x2b66f290,0x614160af,0xd9125a23,
+0xd8f3c7e5,0x8de8aec0,0x41a31c68,0x6ea486ae,
+0xf365720c,0x11e66f07,0x8e4e16d8,0xb11eced2,
+0xdebea3d0,0x5e9d4c3b,0x3c94eaf6,0x65ba385f,
+0xde207fc1,0xd6ed14ef,0xee932f49,0x323bb2e1,
+0x2e100588,0x513a750c,0x78c0fc60,0xe20c608d,
+0x68fe6957,0xd9735d3e,0xc9cf7185,0x5668b408,
+0x918f5ce2,0x6099de01,0x754b9fb0,0x08e8881b,
+0x8db9f29e,0x495a84c0,0x132eeffc,0x7fb089e8,
+0xec74e415,0xa459a616,0x5a6a275f,0x2fe3684d,
+0x8c6a046e,0xfffa1e4b,0x7746b1e9,0x930a3f36,
+0x024fcec7,0x7c4bcb72,0x887e647b,0xbfcaaf01,
+0x5d089422,0xdb3f4220,0xc14e97ce,0x5fd60deb,
+0xcbaccb25,0x7d166e05,0x6359b552,0x56892b71,
+0xf3f441db,0xd8998c22,0xe750e524,0x4067a64f,
+0xcc4b28a2,0x2b3e25c8,0xf0e3397f,0xa64e1573,
+0x96fc4116,0x4275605e,0x8a761bcf,0x520e12fa,
+0x4525ee19,0x7026e46f,0x0f7a4cc0,0x476166ea,
 };
 
 // #define DIM_OPT_ECDC 23*4    92 first block 2018 06 15      = Total    92
@@ -752,10 +772,10 @@ static const unsigned int OPT_ECDC[]={
 // #define DIM_OPT_ECDC 22*4    88 added on    2023 04 27      = Total  2276
 // #define DIM_OPT_ECDC 26*4   104 added on    2024 05 24      = Total  2380
 // #define DIM_OPT_ECDC 79*4   316 added on    2024 08 02      = Total  2696
-// #define DIM_OPT_ECDC 33*4   132 added on    2025 05 23      = Total  2828
-// #define DIM_OPT_ECDC 30*4   120 added on    2025 06 20      = Total  2948
+// #define DIM_OPT_ECDC 33*4  132 added on    2025 05 23      = Total  2828
+// #define DIM_OPT_ECDC 50*4  200 added on    2025 10 03      = Total  3028
 
-#define DIM_OPT_ECDC 2948
+#define DIM_OPT_ECDC 3028
 #define OPOTPFAIL 0
 #define OPOTPOK 1
 
